@@ -15,7 +15,7 @@ REPO_URL="https://github.com/suneelprojects/react-node-mysql-app.git"
 BRANCH_NAME="feature/add-logging"
 REPO_DIR="/home/ec2-user/react-node-mysql-app/frontend"
 ENV_FILE="$REPO_DIR/.env"
-APP_TIER_ALB_URL="http://internal-Application-tier-LoadBalancer-1453437272.us-east-1.elb.amazonaws.com" # Replace with your actual alb endpoint
+APP_TIER_ALB_URL="http://internal-application-tier-LoadBalancer-1265684201.us-east-1.elb.amazonaws.com" # Replace with your actual alb endpoint
 API_URL="/api"
 # Clone the repository as ec2-user
 cd /home/ec2-user
@@ -36,7 +36,7 @@ sudo -u ec2-user npm run build
 sudo cp -r dist /usr/share/nginx/html/
 # Update NGINX configuration
 NGINX_CONF="/etc/nginx/nginx.conf"
-SERVER_NAME="<devopsbhargavi.xyz www.devopsbhargavi.xyz>" #
+SERVER_NAME="devopsjoel.xyz www.devopsjoel.xyz" #
 # Backup existing NGINX configuration
 sudo cp $NGINX_CONF ${NGINX_CONF}.bak
 # Write new NGINX configuration
